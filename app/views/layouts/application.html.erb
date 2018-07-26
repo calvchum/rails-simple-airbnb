@@ -4,12 +4,26 @@
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <div class="navbar-wagon">
+      <!-- Logo -->
+      <a href="/" class="navbar-wagon-brand">
+        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--ao98BnFu--/c_fit,f_auto,fl_progressive,q_80,w_636/n0uxpip8onijaufkntu9.jpg" alt="logo">
+      </a>
+      <!-- Right Navigation -->
+      <div class="navbar-wagon-right hidden-xs hidden-sm">
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
+        <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
+        <!-- Profile picture with dropdown list -->
+      </div>
+      <!-- Dropdown appearing on mobile only -->
+    </div>
     <%= yield %>
   </body>
 </html>
